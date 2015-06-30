@@ -1,0 +1,28 @@
+
+<head>
+  <title>Reactive H-Ball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div id="cover">
+		<img src="city.jpeg">
+	</div>
+  <div id="intro">
+  	<h1>Ocho</h1>
+    <p>Think of a question that can be answered with either 'yes' or 'no' and shake your device.
+      <br />Ocho will reveal the truth.</p>
+  </div>
+  <div id="hball-container">
+    {{> hball}}
+  </div>
+</body>
+
+<template name="hball">
+<!-- <button id="shaker">Shake</button> -->
+  <div id="ball">
+    <div id='text-container'>
+    <div id="text">{{answer}}</div>
+  </div>
+</div>
+</template>
